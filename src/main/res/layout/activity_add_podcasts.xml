@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayoutAddPodcasts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPodcasts"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="5dp"
+    tools:layout_editor_absoluteY="5dp">
+
+    <Button
+        android:id="@+id/submitPodcastsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:text="@string/submit_podcasts_button_str" />
+
+    <TextView
+        android:id="@+id/playlistCreateError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        android:text="@string/playlist_create_error"/>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="5dp"
+    tools:layout_editor_absoluteY="5dp">
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/seeAllPlaylists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:text="@string/all_playlists" />
+
+    <Space
+        android:id="@+id/seeMyPlaylistsSpace"
+        android:layout_width="1dp"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/seeMyPlaylists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:text="@string/my_playlists" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/seeAllPodcasts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:text="@string/all_podcasts" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/createNewPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:text="@string/new_playlist" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/createNewPodcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:text="@string/new_podcast" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_out"/>
+
+</LinearLayout>

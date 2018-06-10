@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeePlaylist" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/editPlaylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/edit_playlist"/>
+
+            <Button
+                android:id="@+id/deletePlaylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/delete_playlist"/>
+
+            <Button
+                android:id="@+id/playlistReturnToHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/return_home"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/playlistNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pl_name_label"/>
+
+        <TextView
+            android:id="@+id/playlistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/playlistOwnerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pl_owner_label"/>
+
+        <TextView
+            android:id="@+id/playlistOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/playlistDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pl_description_label"/>
+
+        <TextView
+            android:id="@+id/playlistDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/playlistPodcastsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/pl_podcast_label"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/playlistPodcasts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/playlistEndorsementsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pl_endorsements_label"/>
+
+        <ListView
+            android:id="@+id/playlistEndorsements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/addEndorsement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:text="@string/pl_add_endorsement"/>
+
+        <TextView
+            android:id="@+id/playlistCommentsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pl_comments_label"/>
+
+        <ListView
+            android:id="@+id/playlistComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/addComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:text="@string/pl_add_comment"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeePodcast" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/editPodcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_podcast"/>
+
+            <Button
+                android:id="@+id/deletePodcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_podcast"/>
+
+            <Button
+                android:id="@+id/podcastReturnToHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/return_home"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/podTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pod_title_label"/>
+
+        <TextView
+            android:id="@+id/podTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/podGenreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pod_genre_label"/>
+
+        <TextView
+            android:id="@+id/podGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/podActiveLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pod_active_label"/>
+
+        <TextView
+            android:id="@+id/podActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/podNumEpisodesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/pod_num_episodes_label"/>
+
+            <TextView
+                android:id="@+id/podNumEpisodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/podNumSeasonsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/pod_num_seasons_label"/>
+
+            <TextView
+                android:id="@+id/podNumSeasons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/podDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pod_description_label"/>
+
+        <TextView
+            android:id="@+id/podDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/podPlaylistsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pod_playlists_label"/>
+
+        <ListView
+            android:id="@+id/podPlaylists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/podTotRatingsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pod_tot_ratings_label"/>
+
+        <TextView
+            android:id="@+id/podTotRatings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/podAvgRatingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/pod_avg_rating_label"/>
+
+        <TextView
+            android:id="@+id/podAvgRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ratePodcastButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/rate_podcast"/>
+
+    </LinearLayout>
+
+</ScrollView>

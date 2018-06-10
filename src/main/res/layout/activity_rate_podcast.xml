@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatePodcast"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="15dp"
+    tools:layout_editor_absoluteY="15dp">
+
+    <TextView
+        android:id="@+id/newCommentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:text="@string/rate_podcast_label"/>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/rating1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+
+        <RadioButton android:id="@+id/rating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+
+        <RadioButton android:id="@+id/rating3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+
+        <RadioButton android:id="@+id/rating4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+
+        <RadioButton android:id="@+id/rating5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/commentSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/ratingErrorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:textColor="@color/colorAccent"
+        android:text="@string/rating_error_label"/>
+
+</LinearLayout>
